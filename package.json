@@ -5,6 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "deploy": "npx opennextjs-cloudflare && wrangler deploy",
+    "preview": "npx opennextjs-cloudflare && wrangler pages dev .vercel/output/static --compatibility-flag=nodejs_compat",
     "start": "next start",
     "lint": "next lint",
     "d1": "wrangler d1 execute img --local --file=./tgimglog.sql"
