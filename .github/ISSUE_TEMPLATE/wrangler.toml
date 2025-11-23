@@ -1,0 +1,13 @@
+# wrangler.toml
+name = "your-app-name"
+compatibility_date = "2024-01-01"
+compatibility_flags = ["nodejs_compat"]
+
+# 这些设置确保兼容性标志生效
+[placement]
+mode = "smart"
+
+# 如果需要使用 KV、R2 等绑定，可以在这里配置
+# [[kv_namespaces]]
+# binding = "MY_KV"
+# id = "your-kv-id"
